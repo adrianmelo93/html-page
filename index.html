@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML-page</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    <img src="./waterfall.jpg" alt="Waterfall">
+    <section>
+      <h1>Adrian Melo</h1><!-- remove space
+   --><ul>
+        <li><a class="yellow-button"href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="Fancy" type="button">Fancy</button>
+    </section>
+
+    <section id="about" class="purple-title">
+      <h2>bout</h2>
+      <hr>
+    </section>
+
+    <section id="portfolio">
+      <h2>portfolio</h2>
+      <hr>
+    </section>
+
+    <section id="resume">
+      <h2>resume</h2>
+      <hr>
+    </section>
+
+    <section id="contact">
+      <h2>contact</h2>
+      <hr>
+    </section>
+    <script type="text/javascript">
+    var x = document.querySelectorAll('li a');
+    var redButton = document.getElementById('Fancy');
+    redButton.addEventListener('click', function() {
+      x[0].classlist.add('yellow-buton');
+      x[1].classlist.add('yellow-buton');
+      x[2].classlist.add('yellow-buton');
+      x[3].classlist.add('yellow-buton');
+
+    });
+
+    </script>
+
+  </body>
+</html>
